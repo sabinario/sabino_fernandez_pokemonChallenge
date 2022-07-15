@@ -98,7 +98,7 @@ const HomeScreen = () => {
           />
         )}
         {nextPage && (
-          <ChangePageButton title='Next gage' url={nextPage} fetchPokemons={fetchPokemons} />
+          <ChangePageButton title='Next page' url={nextPage} fetchPokemons={fetchPokemons} />
         )}
         {!nextPage && !previousPage && (
           <ChangePageButton title='Go back' fetchPokemons={fetchPokemons} />

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import { debounce as _debounce } from 'lodash';
 import { Button, StyleSheet, TextInput, View } from 'react-native';
 
 const Search = ({ fetchPokemons, fetchPokemon }) => {

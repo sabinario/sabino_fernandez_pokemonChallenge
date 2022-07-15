@@ -28,7 +28,7 @@ const PokemonCard = ({ pokemon }) => {
     <TouchableNativeFeedback onPress={goToPokemonPage}>
       <View style={bgStyles}>
         <Image source={{ uri: pokemon.image }} style={styles.image} />
-        <Text style={styles.number}>#{`${pokemon.order}`.padStart(2, 0)}</Text>
+        <Text style={styles.number}>#{`${pokemon.order}`.padStart(3, 0)}</Text>
         <Text style={styles.name}>{pokemon.name}</Text>
       </View>
     </TouchableNativeFeedback>
@@ -43,14 +43,6 @@ const styles = StyleSheet.create({
     height: 150,
     margin: 5,
     padding: 10,
-    /* shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5, */
   },
   image: {
     width: 100,
